@@ -23,7 +23,10 @@
       line-height: 1.65;
       padding: 24px 16px 64px;
     }
-    .container { max-width: 860px; margin: 0 auto; }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
     header {
       text-align: center;
       margin-bottom: 28px;
@@ -32,9 +35,22 @@
       border: 1px solid var(--border);
       border-radius: 18px;
     }
-    h1 { margin: 0 0 8px; font-size: 1.9rem; color: var(--gold); }
-    .subtitle { color: var(--muted); font-size: 0.96rem; margin: 0 0 16px; }
-    .lang-nav { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.9rem;
+      color: var(--gold);
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin: 0 0 16px;
+    }
+    .lang-nav {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     .lang-nav a {
       color: var(--text);
       text-decoration: none;
@@ -44,6 +60,10 @@
       background: rgba(79, 227, 193, 0.12);
       font-weight: 600;
       font-size: 0.9rem;
+    }
+    .lang-nav a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
     }
     section {
       background: var(--card);
@@ -59,7 +79,11 @@
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
     }
-    h3 { color: var(--gold); font-size: 1.05rem; margin-top: 18px; }
+    h3 {
+      color: var(--gold);
+      font-size: 1.05rem;
+      margin-top: 18px;
+    }
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
     .badge {
@@ -74,18 +98,23 @@
       margin: 4px 4px 12px 0;
     }
     a.mail { color: var(--gold); }
-    footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 28px; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 28px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Lumina Isle: Eco Beam Puzzle</h1>
-      <p class="subtitle">Privacy Policy, EU GDPR / DSA Disclosure &amp; Legal Notice (<code>com.lumina.isle</code>) &bull; Effective Date: November 22, 2026</p>
+      <p class="subtitle">Privacy Policy, EU GDPR / UMP Consent, Play Billing &amp; Legal Notice (<code>com.lumina.isle</code>) &bull; Effective Date: November 23, 2026</p>
       <div>
-        <span class="badge">100% Offline</span>
-        <span class="badge">Zero Data Collected</span>
-        <span class="badge">0&euro; &mdash; No IAP / No Ads</span>
+        <span class="badge">Free-to-Play (All 1,000 Stages)</span>
+        <span class="badge">Google AdMob + EU UMP Consent</span>
+        <span class="badge">Optional Google Play Billing IAP</span>
         <span class="badge">GDPR &amp; EU DSA Compliant</span>
       </div>
       <nav class="lang-nav">
@@ -94,69 +123,91 @@
         <a href="#vi">Ti&#7871;ng Vi&#7879;t</a>
       </nav>
     </header>
+
     <section id="en">
       <h2>1. Privacy Policy (English)</h2>
-      <p><strong>Lumina Isle: Eco Beam Puzzle</strong> (package <code>com.lumina.isle</code>) is an independent, 100% offline optical puzzle and 3D island sanctuary game designed with <strong>Privacy by Design and by Default (EU GDPR Art. 5 &amp; Art. 25)</strong>.</p>
-      <h3>1.1 Zero Personal Data Collection</h3>
+      <p><strong>Lumina Isle: Eco Beam Puzzle</strong> (package <code>com.lumina.isle</code>) is a family-friendly (PEGI 3 / USK 0) optical puzzle and 3D island sanctuary game. We run <strong>no private analytics or tracking servers</strong>; network connectivity is used strictly by certified Google Play / Google Mobile Ads SDKs.</p>
+
+      <h3>1.1 Google AdMob &amp; EU UMP Consent (GDPR Art. 6 &amp; TCF v2.2)</h3>
       <ul>
-        <li><strong>No Data Collected or Shared:</strong> The app does <strong>not</strong> collect, store remotely, process, sell, or share any personal data, device identifiers, Advertising IDs (<code>AD_ID</code>), location data, contacts, or analytics.</li>
-        <li><strong>Zero Network Permissions:</strong> The app declares zero Android permissions (no <code>INTERNET</code> permission) and includes no third-party advertising, tracking, or analytics SDKs.</li>
+        <li><strong>Advertising SDK:</strong> Lumina Isle uses <strong>Google AdMob</strong> to display Banner, Interstitial, Rewarded Video, and App Open ads. In the EEA, UK, and Switzerland, the app presents Google's <strong>User Messaging Platform (UMP)</strong> consent form before loading ads.</li>
+        <li><strong>Data Processed by Google:</strong> Depending on your consent choice, Google AdMob may process your Device / Advertising ID (<code>AD_ID</code>), approximate IP-based location, ad interaction metrics, and crash/diagnostic signals.</li>
+        <li><strong>Withdraw Consent Anytime:</strong> Open <strong>Home &rarr; Legal Center (&shield;) &rarr; Manage Ad Privacy Consent</strong> inside the app at any time to change or withdraw consent. Purchasing <em>Remove Ads</em> or <em>VIP Monthly Pass</em> disables all forced banner, interstitial, and app-open ads.</li>
       </ul>
-      <h3>1.2 Strictly Local Game Progress Storage (ePrivacy / TDDDG &sect; 25)</h3>
-      <p>Your gameplay progress (unlocked stages, star ratings, virtual Essence balance, unlocked islands, creature collection, evolution levels, language choice, and quest state) is stored exclusively inside your device's private sandbox (<code>SharedPreferences</code>). Cloud auto-backup is disabled (<code>android:allowBackup="false"</code>).</p>
-      <h3>1.3 Your EU GDPR Rights (Art. 15, 17, 20)</h3>
+
+      <h3>1.2 Google Play Billing (Optional In-App Purchases &amp; Subscriptions)</h3>
       <ul>
-        <li><strong>Right of Access &amp; Portability (Art. 15 &amp; 20):</strong> View and export a full human-readable and JSON summary of your local save data anytime inside the app via <strong>Home &rarr; GDPR &amp; Data &rarr; View Local Data</strong>.</li>
-        <li><strong>Right to Erasure (Art. 17):</strong> Permanently delete 100% of your local save data with one confirmed tap via <strong>Home &rarr; GDPR &amp; Data &rarr; Delete All Local Data</strong>, or by uninstalling the app.</li>
+        <li>All 1,000 puzzle stages can be played 100% free. Optional Diamond packs, bundles (Starter Pack, Remove Ads, Citadel Architect), and the auto-renewing VIP Monthly Pass are processed exclusively by <strong>Google Play Billing</strong>.</li>
+        <li>We never see or store your payment card details. Only non-sensitive purchase entitlement tokens and unlock states are stored locally on your device. Subscriptions renew monthly unless cancelled via Google Play Subscriptions.</li>
       </ul>
-      <h3>1.4 EU DSA Virtual Currency &amp; Probability Transparency</h3>
-      <p>Lumina Isle contains <strong>zero real-money purchases (0&euro;)</strong>, zero advertisements, and zero real-money gambling. All virtual rewards are earned purely through gameplay with transparent mathematical odds:</p>
+
+      <h3>1.3 Local Game Progress Storage &amp; Your GDPR Rights (Art. 15, 17, 20)</h3>
       <ul>
-        <li><strong>Lucky Wheel:</strong> Equal 1/6 (16.67%) chance per slice (12 Essence, 1 Hint, 25 Essence, 1 Mystery Chest, 75 Essence, or Unowned Creature / +55 Essence fallback).</li>
-        <li><strong>Mystery Chest:</strong> 100% Essence (12&ndash;30) + 100% Hint (+1) + 8.0% Unowned Creature roll.</li>
-        <li><strong>Wild Creature Encounter per Stage:</strong> Easy 1.5%, Medium 2.5%, Hard/Expert 4.5%, Master/Hell 7.5% (+3% per Eco Magnetism upgrade level).</li>
+        <li>Stage stars, Essence balance, unlocked islands, creature evolutions, and settings remain stored locally in Android <code>SharedPreferences</code> (<code>lumina_isle_v3_prefs</code>).</li>
+        <li><strong>Right of Access &amp; Portability (Art. 15 &amp; 20):</strong> Export a human-readable + JSON summary via <strong>Home &rarr; GDPR &amp; Data &rarr; View Local Data</strong>.</li>
+        <li><strong>Right to Erasure (Art. 17):</strong> Permanently erase all local save data via <strong>Home &rarr; GDPR &amp; Data &rarr; Delete All Local Data</strong>, or uninstall the app.</li>
       </ul>
+
+      <h3>1.4 EU DSA Odds Transparency</h3>
+      <ul>
+        <li><strong>Lucky Wheel:</strong> Equal 1/6 (16.67%) chance per slice.</li>
+        <li><strong>Mystery Chest:</strong> 100% Essence (12&ndash;30) + 35% Hint (+1) + 8.0% Unowned Creature roll.</li>
+        <li><strong>Wild Creature Encounter:</strong> Easy 1.5%, Medium 2.5%, Hard/Expert 4.5%, Master/Hell 7.5% (+4% per Eco Magnetism upgrade).</li>
+      </ul>
+
       <h3>1.5 Contact</h3>
-      <p>Independent Developer Contact: <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a></p>
+      <p>Developer / Legal Contact (&sect; 5 DDG): <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a></p>
     </section>
+
     <section id="de">
-      <h2>2. Datenschutzerkl&auml;rung &amp; Rechtliche Hinweise (Deutsch &mdash; DSGVO &amp; &sect; 5 DDG)</h2>
-      <p><strong>Lumina Isle: Licht &amp; &Ouml;ko-Insel</strong> (<code>com.lumina.isle</code>) ist ein vollst&auml;ndig offline funktionierendes Einzelspieler-Puzzlespiel nach dem Prinzip <strong>Privacy by Design &amp; by Default (Art. 5, 25 DSGVO)</strong>.</p>
-      <h3>2.1 Keine Erhebung oder &Uuml;bermittlung personenbezogener Daten</h3>
+      <h2>2. Datenschutzerkl&auml;rung &amp; Rechtliche Hinweise (Deutsch &mdash; DSGVO, UMP &amp; &sect; 5 DDG)</h2>
+      <p><strong>Lumina Isle: Licht &amp; &Ouml;ko-Insel</strong> (<code>com.lumina.isle</code>) betreibt <strong>keine eigenen Tracking-Server</strong>. Netzwerkverbindungen erfolgen ausschlie&szlig;lich &uuml;ber Google Play Dienste (Google AdMob, Google UMP, Google Play Billing).</p>
+
+      <h3>2.1 Google AdMob &amp; EU-Einwilligungsverwaltung (UMP / TCF v2.2)</h3>
       <ul>
-        <li>Die App erhebt, speichert auf Servern oder &uuml;bermittelt <strong>keinerlei personenbezogene Daten</strong>, keine Werbe-IDs (<code>AD_ID</code>), keine Standortdaten und nutzt keine Analyse- oder Werbe-SDKs.</li>
-        <li>Die App fordert <strong>keine Internet-Berechtigung</strong> an und ist zu 100 % werbefrei sowie ohne In-App-K&auml;ufe (0 &euro;).</li>
+        <li>Die App integriert <strong>Google AdMob</strong> (Banner-, Zwischen-, Pr&auml;mienvideo- und App-Open-Werbung). Vor der Auslieferung wird im EWR/UK ein DSGVO-konformer Einwilligungsdialog &uuml;ber die <strong>Google User Messaging Platform (UMP)</strong> angezeigt (Art. 6 Abs. 1 lit. a DSGVO, &sect; 25 TDDDG).</li>
+        <li>Abh&auml;ngig von Ihrer Auswahl kann Google die Werbe-ID (<code>AD_ID</code>), grobe Standortdaten (IP), Werbe-Interaktionen und Absturzdiagnosen verarbeiten. Sie k&ouml;nnen Ihre Auswahl jederzeit unter <strong>Startseite &rarr; &shield; &rarr; Werbe-Einwilligung verwalten</strong> widerrufen.</li>
       </ul>
-      <h3>2.2 Lokale Speicherung des Spielstands (&sect; 25 TDDDG)</h3>
-      <p>Dein Spielstand (Level, Sterne, virtuelle Lichtessenz, Inseln, Naturwesen, Spracheinstellung) wird ausschlie&szlig;lich lokal im privaten App-Speicher deines Ger&auml;ts (<code>SharedPreferences</code>) gesichert. Automatisches Cloud-Backup ist deaktiviert (<code>allowBackup="false"</code>).</p>
-      <h3>2.3 Deine Rechte nach DSGVO (Art. 15, 17, 20)</h3>
+
+      <h3>2.2 Optionale In-App-K&auml;ufe &uuml;ber Google Play (PAngV / MwSt.)</h3>
       <ul>
-        <li><strong>Auskunft &amp; Daten&uuml;bertragbarkeit (Art. 15, 20 DSGVO):</strong> In der App unter <strong>Startseite &rarr; DSGVO &amp; Daten &rarr; Lokale Daten anzeigen</strong> einsehbar (inkl. JSON-Export).</li>
-        <li><strong>Recht auf L&ouml;schung (Art. 17 DSGVO):</strong> Alle lokalen Spieldaten k&ouml;nnen jederzeit in der App unter <strong>Startseite &rarr; Alle lokalen Daten l&ouml;schen</strong> oder durch Deinstallation vollst&auml;ndig entfernt werden.</li>
+        <li>Alle 1.000 Level sind kostenlos spielbar. Optionale Pakete (Starter-Paket, Werbefrei, Zitadellen-Paket, Diamanten, VIP-Monatspass) werden sicher &uuml;ber <strong>Google Play Billing</strong> inkl. gesetzlicher MwSt. abgerechnet.</li>
       </ul>
-      <h3>2.4 Transparenzhinweis gem&auml;&szlig; EU-DSA (Keine Echtgeldk&auml;ufe)</h3>
-      <p>Alle Spielmechaniken sind kostenfrei (0 &euro;) und ohne Echtgeldeinsatz. Zuf&auml;llige Belohnungen im Spiel nutzen feste, offen gelegte Wahrscheinlichkeiten (Gl&uuml;cksrad: 16,67 % je Feld; Schatztruhe: 8,0 % Wesen-Chance; Wildbegegnungen: 1,5 %&ndash;7,5 % je Schwierigkeitsgrad).</p>
-      <h3>2.5 Kontakt / Impressum (&sect; 5 DDG)</h3>
-      <p>Privater / Unabh&auml;ngiger Entwickler (Lumina Isle)<br />
-      E-Mail: <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a></p>
+
+      <h3>2.3 Lokale Speicherung &amp; Betroffenenrechte (Art. 15, 17, 20 DSGVO)</h3>
+      <ul>
+        <li>Spielfortschritte liegen lokal in <code>SharedPreferences</code> (<code>lumina_isle_v3_prefs</code>) und lassen sich im Men&uuml; jederzeit einsehen, als JSON exportieren (Art. 15/20) oder per Knopfdruck l&ouml;schen (Art. 17).</li>
+      </ul>
+
+      <h3>2.4 Kontakt / Impressum (&sect; 5 DDG)</h3>
+      <p>Anbieter: Frog-Job / Lumina Isle Studio &bull; E-Mail: <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a></p>
     </section>
+
     <section id="vi">
-      <h2>3. Ch&iacute;nh S&aacute;ch Quy&#7873;n Ri&ecirc;ng T&#432; &amp; Minh B&#7841;ch EU (Ti&#7871;ng Vi&#7879;t)</h2>
-      <p><strong>Lumina Isle: &#272;&#7843;o &Aacute;nh S&aacute;ng 3D</strong> (<code>com.lumina.isle</code>) l&agrave; tr&ograve; ch&#417;i gi&#7843;i &#273;&#7889; quang h&#7885;c 100% ngo&#7841;i tuy&#7871;n, tu&acirc;n th&#7911; nghi&ecirc;m ng&#7863;t quy &#273;&#7883;nh b&#7843;o v&#7879; d&#7919; li&#7879;u Li&ecirc;n minh Ch&acirc;u &Acirc;u (<strong>GDPR &amp; EU DSA</strong>).</p>
-      <h3>3.1 Kh&ocirc;ng thu th&#7853;p hay chia s&#7867; d&#7919; li&#7879;u c&aacute; nh&acirc;n</h3>
+      <h2>3. Ch&iacute;nh S&aacute;ch Quy&#7873;n Ri&ecirc;ng T&#432; &amp; Minh B&#7841;ch (Ti&#7871;ng Vi&#7879;t)</h2>
+      <p><strong>Lumina Isle: &#272;&#7843;o &Aacute;nh S&aacute;ng 3D</strong> (<code>com.lumina.isle</code>) cho ph&eacute;p ch&#417;i mi&#7877;n ph&iacute; to&agrave;n b&#7897; 1.000 m&agrave;n gi&#7843;i &#273;&#7889; v&agrave; kh&ocirc;ng v&#7853;n h&agrave;nh m&aacute;y ch&#7911; theo d&otilde;i ri&ecirc;ng.</p>
+
+      <h3>3.1 Qu&#7843;ng C&aacute;o Google AdMob &amp; &#272;&#7891;ng Thu&#7853;n EU (UMP)</h3>
       <ul>
-        <li>&#7912;ng d&#7909;ng <strong>kh&ocirc;ng</strong> thu th&#7853;p, kh&ocirc;ng l&#432;u m&aacute;y ch&#7911; v&agrave; kh&ocirc;ng chia s&#7867; b&#7845;t k&#7923; d&#7919; li&#7879;u c&aacute; nh&acirc;n, m&atilde; qu&#7843;ng c&aacute;o (<code>AD_ID</code>), v&#7883; tr&iacute; hay h&agrave;nh vi ng&#432;&#7901;i d&ugrave;ng n&agrave;o.</li>
-        <li>&#7912;ng d&#7909;ng kh&ocirc;ng y&ecirc;u c&#7847;u quy&#7873;n truy c&#7853;p Internet, kh&ocirc;ng ch&#7913;a qu&#7843;ng c&aacute;o v&agrave; kh&ocirc;ng c&oacute; giao d&#7883;ch n&#7841;p ti&#7873;n th&#7853;t (<strong>0&euro;</strong>).</li>
+        <li>&#7912;ng d&#7909;ng s&#7917; d&#7909;ng <strong>Google AdMob</strong> (Banner, Xen k&#7869;, Video c&oacute; th&#432;&#7903;ng v&agrave; M&#7903; &#7913;ng d&#7909;ng) c&ugrave;ng n&#7873;n t&#7843;ng xin ph&eacute;p <strong>Google UMP (TCF v2.2)</strong> t&#7841;i Ch&acirc;u &Acirc;u.</li>
+        <li>B&#7841;n c&oacute; th&#7875; thay &#273;&#7893;i l&#7921;a ch&#7885;n qu&#7843;ng c&aacute;o trong <strong>Trang Ch&#7911; &rarr; &shield; &rarr; Qu&#7843;n L&yacute; &#272;&#7891;ng Thu&#7853;n Qu&#7843;ng C&aacute;o</strong> ho&#7863;c mua g&oacute;i X&oacute;a Qu&#7843;ng C&aacute;o / VIP &#273;&#7875; t&#7855;t ho&agrave;n to&agrave;n qu&#7843;ng c&aacute;o &eacute;p bu&#7897;c.</li>
       </ul>
-      <h3>3.2 L&#432;u tr&#7919; c&#7909;c b&#7897; &amp; Quy&#7873;n x&oacute;a d&#7919; li&#7879;u (GDPR Art. 15, 17, 20)</h3>
+
+      <h3>3.2 G&oacute;i Mua T&ugrave;y Ch&#7885;n Qua Google Play Billing</h3>
       <ul>
-        <li>Ti&#7871;n tr&igrave;nh ch&#417;i ch&#7881; &#273;&#432;&#7907;c l&#432;u n&#7897;i b&#7897; tr&ecirc;n thi&#7871;t b&#7883; c&#7911;a b&#7841;n (<code>SharedPreferences</code>).</li>
-        <li>B&#7841;n c&oacute; th&#7875; xem/xu&#7845;t d&#7919; li&#7879;u JSON c&#7909;c b&#7897; ho&#7863;c <strong>x&oacute;a to&agrave;n b&#7897; d&#7919; li&#7879;u ch&#7881; b&#7857;ng 1 ch&#7841;m</strong> ngay trong m&#7909;c <strong>Trang Ch&#7911; &rarr; GDPR &amp; D&#7919; Li&#7879;u</strong> ho&#7863;c g&#7905; c&agrave;i &#273;&#7863;t &#7913;ng d&#7909;ng.</li>
+        <li>M&#7885;i giao d&#7883;ch mua g&oacute;i Kim C&#432;&#417;ng, X&oacute;a Qu&#7843;ng C&aacute;o ho&#7863;c Th&#7867; VIP &#273;&#432;&#7907;c x&#7917; l&yacute; b&#7843;o m&#7853;t tr&#7921;c ti&#7871;p qua Google Play Store (hi&#7875;n th&#7883; gi&aacute; cu&#7889;i g&#7891;m thu&#7871; VAT tr&#432;&#7899;c khi thanh to&aacute;n).</li>
       </ul>
-      <h3>3.3 Li&ecirc;n h&#7879;</h3>
-      <p>Nh&agrave; ph&aacute;t tri&#7875;n c&aacute; nh&acirc;n &mdash; Email h&#7895; tr&#7907;: <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a></p>
+
+      <h3>3.3 L&#432;u Tr&#7919; C&#7909;c B&#7897; &amp; Quy&#7873;n GDPR</h3>
+      <ul>
+        <li>Ti&#7871;n tr&igrave;nh ch&#417;i l&#432;u t&#7841;i ch&#7895; (<code>SharedPreferences</code>). Xem/xu&#7845;t JSON ho&#7863;c x&oacute;a v&icirc;nh vi&#7877;n t&#7841;i <strong>Trang Ch&#7911; &rarr; &shield; &rarr; GDPR &amp; D&#7919; Li&#7879;u</strong>.</li>
+        <li>Li&ecirc;n h&#7879; h&#7895; tr&#7907;: <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a></li>
+      </ul>
     </section>
-    <footer>&copy; 2026 Lumina Isle (<code>com.lumina.isle</code>) &bull; Contact: <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a></footer>
+
+    <footer>
+      &copy; 2026 Lumina Isle (<code>com.lumina.isle</code>) &bull; Contact: <a class="mail" href="mailto:info@frog-job.com">info@frog-job.com</a>
+    </footer>
   </div>
 </body>
-            </html>
+</html>
